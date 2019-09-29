@@ -56,13 +56,31 @@ zodiac_days = ((1, 20), (2, 19), (3, 21), (4, 21), (5, 21), (6, 22),
 #     print(num)
 #     time.sleep(1)
 
-int_month = int(input('请输入月份：'))
-int_day = int(input('请输入日期：'))
+# int_month = int(input('请输入月份：'))
+# int_day = int(input('请输入日期：'))
+#
+# for zd_num in range(len(zodiac_days)):
+#     if zodiac_days[zd_num] >= (int_month, int_day):
+#         print(zodiac_name[zd_num])
+#         break
+#     elif int_month == 12 and int_day > 23:
+#         print(zodiac_name[0])
+#         break
 
-for zd_num in range(len(zodiac_days)):
-    if zodiac_days[zd_num] >= (int_month, int_day):
-        print(zodiac_name[zd_num])
-        break
-    elif int_month == 12 and int_day > 23:
-        print(zodiac_name[0])
-        break
+# 列表推导式
+# alist = []
+# for i in range(1, 11):
+#     if (i % 2 == 0):
+#         alist.append(i*i)
+# print(alist)
+# plist = [i*i for i in range(1, 11) if(i % 2) == 0]
+# print(plist)
+
+# 字典推导式
+# z_num = {}
+# for i in zodiac_name:
+#     z_num[i] = 0
+z_num = {i: 0 for i in zodiac_name }
+print(z_num)
+
+
