@@ -16,12 +16,15 @@
 
 # 函数
 import re
-def find_item( hero ):
+
+
+def find_item(hero):
     with open('sanguo_utf8.txt') as f:
         data = f.read().replace('\n', '')
         name_num = re.findall(hero, data)
         # print('主角 %s 出现 %s 次' %(hero, len(name_num)))
     return len(name_num)
+
 
 # 读取人物名称
 name_dict = {}

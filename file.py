@@ -28,6 +28,6 @@ print('当前文件指针的位置 %s' % file6.tell())
 # 第一个参数代表偏移的位置， 第二个参数 0表示你从文件开头偏移、1表示从当前位置偏移、2从文件结尾
 file6.seek(5, 1)
 print('进行了seek操作')
-print('当前文件指针的位置 %s' %file6.tell())
+print('当前文件指针的位置 %s' % file6.tell())
 print('当前读取到的一个字符，字符内容是 %s' % file6.read(2))
 file6.close()
